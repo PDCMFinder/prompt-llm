@@ -1,0 +1,73 @@
+Input: 
+There were 13 missense mutations identified in the xenograft that were not present in the patient's primary tumor and there were no new nonsense mutations.
+Output:
+The entities in this sentence are:
+{"genetic_effect": [missense mutations], "model_type": [xenograft], "tumour_type": [primary]}
+There are 3 entities in total. Now I will print out the sentence for 3 times, each time with only one entity marked, the rest of the sentence will be exactly the same as the original sentence.
+(1) There were 13 <genetic_effect>missense mutations</genetic_effect> identified in the xenograft that were not present in the patient's primary tumor and there were no new nonsense mutations.
+(2) There were 13 missense mutations identified in the <model_type>xenograft</model_type> that were not present in the patient's primary tumor and there were no new nonsense mutations.
+(3) There were 13 missense mutations identified in the xenograft that were not present in the patient's <tumour_type>primary</tumour_type> tumor and there were no new nonsense mutations.
+
+
+Input: 
+Here we present the detailed molecular, cellular, genetic and epigenetic characterization of an orthotopic xenograft derived from a high-risk stage 4 neuroblastoma patient.
+Output:
+The entities in this sentence are:
+{"molecular_char": [molecular, cellular, genetic, epigenetic characterization], "model_type": [orthotopic xenograft], "cancer_stage": [stage 4], "diagnosis": [neuroblastoma]}
+There are 7 entities in total. Now I will print out the sentence for 7 times, each time with only one entity marked, the rest of the sentence will be exactly the same as the original sentence.
+(1) Here we present the detailed <molecular_char>molecular<molecular_char>, cellular, genetic and epigenetic characterization of an orthotopic xenograft derived from a high-risk stage 4 neuroblastoma patient.
+(2) Here we present the detailed molecular, <molecular_char>cellular</molecular_char>, genetic and epigenetic characterization of an orthotopic xenograft derived from a high-risk stage 4 neuroblastoma patient.
+(3) Here we present the detailed molecular, cellular, <molecular_char>genetic</molecular_char> and epigenetic characterization of an orthotopic xenograft derived from a high-risk stage 4 neuroblastoma patient.
+(4) Here we present the detailed molecular, cellular, genetic and <molecular_char>epigenetic characterization</molecular_char> of an orthotopic xenograft derived from a high-risk stage 4 neuroblastoma patient.
+(5) Here we present the detailed molecular, cellular, genetic and epigenetic characterization of an <model_type>orthotopic xenograft</model_type> derived from a high-risk stage 4 neuroblastoma patient.
+(6) Here we present the detailed molecular, cellular, genetic and epigenetic characterization of an orthotopic xenograft derived from a high-risk <cancer_stage>stage 4</cancer_stage> neuroblastoma patient.
+(7) Here we present the detailed molecular, cellular, genetic and epigenetic characterization of an orthotopic xenograft derived from a high-risk stage 4 <diagnosis>neuroblastoma</diagnosis> patient.
+
+
+Input: 
+Embryonal rhabdomyosarcoma is a pediatric cancer of the developing sympathoadrenal lineage.
+Output:
+The entities in this sentence are:
+{"diagnosis": [Embryonal rhabdomyosarcoma], "age_category": [pediatric]}
+There are 2 entities in total. Now I will print out the sentence for 2 times, each time with only one entity marked, the rest of the sentence will be exactly the same as the original sentence.
+(1) <diagnosis>Embryonal rhabdomyosarcoma</diagnosis> is a pediatric cancer of the developing sympathoadrenal lineage.
+(2) Embryonal rhabdomyosarcoma is a <age_category>pediatric</age_category> cancer of the developing sympathoadrenal lineage.
+
+
+Input: 
+With these NOD-SCID PDXs, we performed in vivo compound screens using a 1 × 1 × 1 experimental design (PDX clinical trial or PCT) to assess the population responses to 62 treatments across six indications.
+Output:
+The entities in this sentence are:
+{"model_type": [PDXs], "clinical_trial": [PDX clinical trial, PCT], "host_strain": [NOD-SCID]}
+There are 4 entities in total. Now I will print out the sentence for 4 times, each time with only one entity marked, the rest of the sentence will be exactly the same as the original sentence.
+(1) With these NOD-SCID <model_type>PDXs<model_type>, we performed in vivo compound screens using a 1 × 1 × 1 experimental design (PDX clinical trial or PCT) to assess the population responses to 62 treatments across six indications.
+(2) With these NOD-SCID PDXs, we performed in vivo compound screens using a 1 × 1 × 1 experimental design (<clinical_trial>PDX clinical trial</clinical_trial> or PCT) to assess the population responses to 62 treatments across six indications.
+(3) With these NOD-SCID PDXs, we performed in vivo compound screens using a 1 × 1 × 1 experimental design (PDX clinical trial or <clinical_trial>PCT<clinical_trial>) to assess the population responses to 62 treatments across six indications.
+(4) With these <host_strain>NOD-SCID</host_strain> PDXs, we performed in vivo compound screens using a 1 × 1 × 1 experimental design (PDX clinical trial or PCT) to assess the population responses to 62 treatments across six indications.
+
+
+
+Input:
+Here we evaluate the capacity of patient-derived organoids (PDOs) to predict clinical drug response and functional consequences of tumor heterogeneity.
+Output:
+The entities in this sentence are:
+{"model_type": [patient-derived organoids, PDOs]}
+There are 2 entities in total. Now I will print out the sentence for 2 times, each time with only one entity marked, the rest of the sentence will be exactly the same as the original sentence.
+(1) Here we evaluate the capacity of <model_type>patient-derived organoids</model_type> (PDOs) to predict clinical drug response and functional consequences of tumor heterogeneity.
+(2) Here we evaluate the capacity of patient-derived organoids (<model_type>PDOs</model_type>) to predict clinical drug response and functional consequences of tumor heterogeneity.
+
+
+
+Input: 
+As autopsy specimens had an ALK R1181C mutation, PHLC402 cell line tumor were treated with the pan-kinase inhibitor lestaurtinib but demonstrated no decrease in tumor growth.
+Output:
+The entities in this sentence are:
+{"sample_type": [autopsy], "biomarker": [ALK], "model_type": [cell line], "treatment": [pan-kinase inhibitor, lestaurtinib], "response_to_treatment": [decrease in tumor growth], "model_id": [PHLC402]}
+There are 7 entities in total. Now I will print out the sentence for 7 times, each time with only one entity marked, the rest of the sentence will be exactly the same as the original sentence.
+(1) As <sample_type>autopsy</sample_type> specimens had an ALK R1181C mutation, PHLC402 cell line tumor were treated with the pan-kinase inhibitor lestaurtinib but demonstrated no decrease in tumor growth.
+(2) As autopsy specimens had an <biomarker>ALK<biomarker> R1181C mutation, PHLC402 cell line tumor were treated with the pan-kinase inhibitor lestaurtinib but demonstrated no decrease in tumor growth.
+(3) As autopsy specimens had an ALK R1181C mutation, PHLC402 <model_type>cell line</model_type> tumor were treated with the pan-kinase inhibitor lestaurtinib but demonstrated no decrease in tumor growth.
+(4) As autopsy specimens had an ALK R1181C mutation, PHLC402 cell line tumor were treated with the <treatment>pan-kinase inhibitor</treatment> lestaurtinib but demonstrated no decrease in tumor growth.
+(5) As autopsy specimens had an ALK R1181C mutation, PHLC402 cell line tumor were treated with the pan-kinase inhibitor <treatment>lestaurtinib</treatment> but demonstrated no decrease in tumor growth.
+(6) As autopsy specimens had an ALK R1181C mutation, PHLC402 cell line tumor were treated with the pan-kinase inhibitor lestaurtinib but demonstrated no <response_to_treatment>decrease in tumor growth</response_to_treatment>.
+(7) As autopsy specimens had an ALK R1181C mutation, <model_id>PHLC402</model_id> cell line tumor were treated with the pan-kinase inhibitor lestaurtinib but demonstrated no decrease in tumor growth.
